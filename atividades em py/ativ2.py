@@ -29,5 +29,5 @@ def main():
     print("\nMatriz 10x1:")
     print(matriz_10x1)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()

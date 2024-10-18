@@ -58,14 +58,14 @@ Subitração2 = J - I
 print("I - J =\n", Subitração2)
 
 #Exemplo 6 Subitração de matriz(2x2)
-G = np.array([[6, 8], 
+K = np.array([[6, 8], 
               [4, 7]])
 
-H = np.array([[3, 2], 
+L = np.array([[3, 2], 
               [5, 1]])
 
-Subitração3 = G - H
-print("G - H =\n", Subitração3)
+Subitração3 = K - L
+print("K - L =\n", Subitração3)
 
 # Multiplicação de matrizes (2x2)
 M = np.array([[1, 2],

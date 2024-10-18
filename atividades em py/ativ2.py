@@ -1,33 +1,33 @@
-import numpy as np
+matriz = [[0 for _ in range(10)] for _ in range(10)]
+ 
+def exibir_matriz(matriz):
 
-def main():
-    # Inicializa uma lista para armazenar os números
-    numeros = []
+    for linha in matriz:
 
-    # Solicita ao usuário que insira 10 números de 0 a 9
-    print("Insira 10 números de 0 a 9:")
-    while len(numeros) < 10:
-        try:
-            numero = int(input(f"Digite o número {len(numeros) + 1}: "))
-            if 0 <= numero <= 9:
-                numeros.append(numero)
-            else:
-                print("Por favor, insira um número entre 0 e 9.")
-        except ValueError:
-            print("Entrada inválida! Por favor, insira um número inteiro.")
+        print(" ".join(f"{num:3}" for num in linha))  
+ 
+print("Adicione os valores da matriz:")
 
-    # Cria uma matriz 1x10 a partir dos números
-    matriz_1x10 = np.array(numeros).reshape(1, 10)
+for i in range(10):
 
-    # Cria uma matriz 10x1 a partir dos números
-    matriz_10x1 = np.array(numeros).reshape(10, 1)
+    for j in range(10):
 
-    # Exibe as matrizes
-    print("\nMatriz 1x10:")
-    print(matriz_1x10)
+        while True:
 
-    print("\nMatriz 10x1:")
-    print(matriz_10x1)
+            try:
 
-if __name__ == "__main__":
-    main()
+                valor = int(input(f"Digite o valor para a posição [{i}][{j}]: "))
+
+                matriz[i][j] = valor
+
+                break 
+
+            except ValueError:
+
+                print("Valor inválido! Digite um número inteiro.")
+ 
+print("\nMatriz completa:")
+
+exibir_matriz(matriz)
+
+ 

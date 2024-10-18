@@ -1,1 +1,0 @@
-print("paz no mundo")

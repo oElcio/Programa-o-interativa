@@ -3,8 +3,8 @@ const inputDescricao = document.getElementById("inputDescricao");
 const btAdicionar = document.getElementById("btAdicionar");
 const baseURL = "https://parseapi.back4app.com/classes/Tarefa";
 const headers = {
-  "X-Parse-Application-Id": "hKRFKn16AvVRPzFPBZ18dr9pZhHRcPV9RvaTnKua",
-  "X-Parse-REST-API-Key": "psedXzNOrkTrkM5kBXVD6deViybeJTBCZphij9xR",
+  "X-Parse-Application-Id": "fqkf5oblVwG1VztyoJnkIiDz4HbmJkCqP82b2KyY",
+  "X-Parse-REST-API-Key": "hpNJH3Ly9h3Zx3giOe9jEjXTBvVaN1zq57GWK75q",
 };
 const headersJson = {
   ...headers,
